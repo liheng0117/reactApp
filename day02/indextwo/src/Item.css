@@ -1,0 +1,15 @@
+.myitem{
+	width: 100%;
+	margin: 0.2rem 0;
+	background-color: white;
+	border-bottom: 1px solid #F0F0F0;
+}
+.myitem>p{
+	padding: 0.2rem;
+	display: flex;
+	justify-content: space-between;
+}
+.myitem>p:last-child>span:last-child{
+	color: #f19762;
+	font-size: 0.3rem;
+}

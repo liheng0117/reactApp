@@ -1,0 +1,10 @@
+.myfoot{
+	width: 100%;
+}
+.myfoot>p{
+	padding: 0.1rem 0.2rem;
+}
+.myfoot>p>span{
+	display: inline-block;
+	width: 1.3rem;
+}

@@ -1,0 +1,26 @@
+.myhead{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	background: white;
+	position: fixed;
+	top: 0;
+}
+.myhead>p:first-child{
+	width: 1rem;
+	font-size: 0.3rem;
+	display: flex;
+	justify-content: center;
+	padding: 0.2rem 0;
+}
+.myhead>p:nth-child(2){
+	flex: 1;
+	text-align: center;
+	font-size: 0.3rem;
+}
+.myhead>p:last-child{
+	width: 1rem;
+	font-size: 0.3rem;
+	display: flex;
+	justify-content: center;
+}
