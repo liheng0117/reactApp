@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+	<style type="text/css">
+		#root{
+			width: 100%;height: 100%;
+			display: flex;
+			flex-direction: column;
+			font-size: 0.24rem;
+		}
+		.bigbox{
+			width: 100%;height: 100%;
+			display: flex;
+			flex-direction: column;
+			font-size: 0.24rem;
+		}
+		.myHead{
+			width: 100%;height: 1rem;
+			background: #666065;
+			color: white;
+			font-size: 0.35rem;
+			display: flex;
+			align-items: center;
+			padding-left: 0.8rem;
+			box-sizing: border-box;
+		}
+		.nav{
+			width: 100%;
+			background: #666065;
+			color: white;
+			display: flex;
+			padding: 0.2rem;
+			box-sizing: border-box;
+		}
+		.nav>dt{
+			width: 2.4rem;
+		}
+		.nav>dt>img{
+			width: 100%;height: auto;
+			display: block;
+		}
+		.nav>dd{
+			flex: 1;
+			padding: 0.2rem;
+			box-sizing: border-box;
+			font-weight: bold;
+			font-size: 0.3rem;
+		}
+		.bigbox>h1{
+			padding: 0.2rem 0.5rem;
+			border-bottom: 1px solid #F0F0F0;
+		}
+		.mySection{
+			flex: 1;
+			overflow: scroll;
+		}
+		::-webkit-scrollbar{
+			width: 0;
+		}
+		.mySection>dl{
+			display: flex;
+		}
+		.mySection>dl>dt{
+			width: 1.4rem;
+			font-weight: bold;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.mySection>dl>dd{
+			flex: 1;
+			padding: 0.2rem 0;
+			border-bottom: 1px solid #F0F0F0;
+		}
+		.mySection>dl>dd>p:last-child{
+			color: #CCCCCC;
+			padding: 0.1rem 0;
+		}
+	</style>
+    <!--react的核心库-->
+	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <!--react的与dom相关的一些功能-->
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <!--将浏览器不支持的jsx语法转化为js语法-->
+    <script crossorigin src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+</head>
+<body>
+      <div id="root"></div>    
+</body>
+
+</html>
+<script type="text/babel">
+      var data=[
+		  {id:"0",name:"治愈钢琴曲 丨 与孤独为伴的人不惧怕任何事",type:"img/img11.png"},
+		  {id:"1",name:"Coming Dun Auter Ete",type:"Yane Tires"},
+		  {id:"2",name:"Without Ten You",type:"Yane Tires"},
+		  {id:"3",name:"Rund des Troues",type:"Yane Tires"},
+		  {id:"4",name:"She Walks Alone",type:"Yane Tires"}
+	  ]
+	   
+	  ReactDOM.render(
+		  <div className="bigbox">
+		     <div className="myHead">
+			      歌单 
+			 </div>
+			 <dl className="nav">
+		        <dt><img src="img/img11.png"/></dt>
+				<dd>治愈钢琴曲 丨 与孤独为伴的人不惧怕任何事</dd>
+			 </dl>
+			 <h1>播放全部</h1>
+			 <div className="mySection"> 
+			   {
+					data.map((val,index)=>{
+						if (index==0) {
+							
+						} else{
+							 return(
+								<dl key={index}>
+									<dt>{val.id}</dt>
+									<dd>
+									   <p>{val.name}</p>
+									   <p>{val.type}</p>
+									</dd>
+								</dl>
+							 ) 
+						}
+						
+						
+				    })
+			    }
+			 </div>
+		  </div>,
+		  document.getElementById("root")  
+	  )
+	  
+     
+      
+     
+
+</script>

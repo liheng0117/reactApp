@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+	<style type="text/css">
+		#root>div>ul{
+			width: 300px;height: 50px;
+			color: white;
+			background: indigo;
+		}
+		#root>div>ul>li{width: 100px;height: 50px; float: left;line-height: 50px;text-align: center;font-size: 16px;}
+	    .count{
+			width: 300px;height: 100px;
+		}
+		.count>span{
+			display: inline-block;
+			width: 100px;height: 30px;
+			line-height: 100px;
+			text-align: center;
+		}
+		.count>span>img{
+			width: 100%;height: auto;
+			display: block;
+		}
+	</style>
+    <!--react的核心库-->
+	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <!--react的与dom相关的一些功能-->
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <!--将浏览器不支持的jsx语法转化为js语法-->
+    <script crossorigin src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+</head>
+<body>
+      <div id="root"></div>    
+</body>
+
+</html>
+<script type="text/babel">
+      var data=[
+		  {id:"0",name:"张三",type:"睡觉",status:"img/a1.jpg"},
+		  {id:"1",name:"李四",type:"吃饭",status:"img/a2.jpg"},
+		  {id:"2",name:"王五",type:"打游戏",status:"img/a3.jpg"},
+		  {id:"3",name:"张西",type:"喝水",status:"img/a4.jpg"}
+	  ]
+	   
+	  ReactDOM.render(
+		  <div>
+		      <ul>
+			    <li>Name</li><li>Type</li><li>Status</li>
+			  </ul>
+			 
+		      {
+				  data.map((val,index)=>{
+				     return(
+					    <p key={index} className="count">
+							<span>{val.name}</span>
+							<span>{val.type}</span>
+							<span>
+								<img src={val.status}/>
+							</span>
+						</p>
+					 ) 
+			      })
+			  }
+		  </div>,
+		  document.getElementById("root")  
+	  )
+	  
+     
+      
+     
+
+</script>

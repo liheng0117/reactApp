@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			p{
+				width: 500px;height: 300px;
+				background: pink;
+			}
+		</style>
+		<!--react的核心库-->
+		<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+		<!--react的与dom相关的一些功能-->
+		<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+		<!--将浏览器不支持的jsx语法转化为js语法-->
+		<script crossorigin src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+		
+	</head>
+	<body>
+		<div id="root">
+		</div>
+	</body>
+</html>
+<script type="text/babel">
+      var data={
+          message:"这是tab1组件",
+      }
+      
+      function clickFn(){
+		  data.message=="这是tab1组件"?data.message="这是tab2组件":data.message="这是tab1组件"
+      	  render()
+      }
+        
+      let render =()=>{
+      		  ReactDOM.render(
+      			  <div>
+				       <span onClick={clickFn}>tab1</span>
+					   <span onClick={clickFn}>tab2</span>
+      				   <p>{data.message}</p>
+      			  </div>,
+      			  document.getElementById("root")  
+      		  )
+      }
+      render()	
+</script>

@@ -1,0 +1,117 @@
+h3 {
+
+    border-bottom: 2px solid #eee;
+
+}
+
+h3>span{
+
+    border-bottom: 2px solid #f40;
+
+}
+
+.car-list, .goods-list{
+
+    overflow: hidden;
+
+    min-width: 870px;
+
+}
+
+li{
+
+    list-style: none;
+
+    display: flex;
+
+}
+
+li.li-checkbox, li.li-info{
+
+    float: left;
+
+}
+
+li.li-info{
+
+    width: 350px;
+
+    margin-left: 20px;
+
+}
+
+li.li-price, li.li-num, li.li-amount, li.li-operation{
+
+    float: right;
+
+    width: 100px;
+
+}
+
+
+
+.goods-list .li-price{
+
+    flex-direction: column;
+
+}
+
+
+
+.goods-list .goods-num{
+
+    width: 30px;
+
+}
+
+
+
+.goods-list .goods-original{
+
+    color: #888;
+
+    text-decoration: line-through;
+
+}
+
+.goods-bottom {
+
+    overflow: hidden;
+
+    min-width: 870px;
+
+    margin-top: 20px;
+
+    background-color: #e5e5e5;
+
+    height: 50px;
+
+    line-height: 50px;
+
+}
+
+.goods-bottom .total-check-all, .goods-bottom .total-del-all {
+
+    float: left;
+
+}
+
+.goods-bottom .total-del-all, .goods-bottom .total-checked {
+
+    margin-left: 20px
+
+}
+
+.goods-bottom .total-nums, .goods-bottom .total-checked {
+
+    float: right;
+
+}
+
+.goods-bottom .goods-checked-num,.goods-bottom .goods-nums {
+
+    padding: 0 5px;
+
+    color: #f40;
+
+}
