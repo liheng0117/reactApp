@@ -1,0 +1,25 @@
+.page-payouts {
+  .detail {
+    color: #0099E8;
+    cursor: pointer;
+  }
+  .detail[disabled]{
+    color: rgba(0, 0, 0, 0.25);;
+    cursor: not-allowed;
+  }
+}
+
+// pop-payouts-detail 弹层
+.pop-payouts-detail {
+  width: 840px;
+  td {
+    max-width: 200px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .amount {
+    width: 80px;
+  }
+}

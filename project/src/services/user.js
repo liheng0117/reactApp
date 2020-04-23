@@ -1,0 +1,20 @@
+import api from './api'
+export const login = data => api('user-login')(data)
+export const logout = data => api('user-logout')(data)
+export const mapList = () => api('common')()
+export const register = data => api('user-register')(data)
+export const sendPasswordEmail = data => api('user-send-email')(data)
+export const passwordReset = data => api('user-password-reset')(data)
+
+export const accountSettings = data => api('account-settings')(data)
+export const accountSettingsUpdate = data => api('account-settings-update')(data)
+export const accountPasswordUpdate = data => api('account-password-update')(data)
+export const accountBilling = data => api('account-billing')(data)
+export const accountBillingUpdate = data => api('account-billing-update')(data)
+
+export const memberList = data => api('member-list')(data)
+export const memberSave = data => api('member-save')(data)
+export const memberUpdate = data => api('member-update')(data)
+export const memberPasswordReset = data => api('member-password-reset')(data)
+export const memberDetail = data => api('member-detail')(data)
+export const adminPasswordUpdate = data => api('admin-password-update')(data)

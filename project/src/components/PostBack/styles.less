@@ -1,0 +1,31 @@
+.postback-table {
+  >.nwd-table-content {
+    >.nwd-table-body {
+      margin: 0;
+    }
+  }
+  tr {
+    cursor: pointer;
+    &:nth-child(2n+1) {
+      >td {
+        background: #EBEFF4;
+      }
+    }
+    >td {
+      &:nth-child(1) {
+        color: #07A2EB;
+      }
+    }
+  }
+
+}
+.postback-title {
+  display: flex;
+  flex-direction: column;
+  &__label {
+    color: #444444;
+  }
+  &__desc {
+    padding: 8px 0;
+  }
+}

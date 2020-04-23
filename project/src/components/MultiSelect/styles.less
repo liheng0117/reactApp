@@ -1,0 +1,98 @@
+
+@ant-prefix: nwd;
+@multi-height: 32px;
+@multi-width: 200px;
+@multi-border-color:#d9d9d9;
+@multi-placeholder-color: #bfbfbf;
+@multi-border-color-hover: #2F3847;
+@ease-in-out: cubic-bezier(0.645, 0.045, 0.355, 1);
+@multi-border-radius: 3px;
+@multi-margin: 11px;
+.@{ant-prefix}-multi-select {
+  position: relative;
+  display: block;
+  height: @multi-height;
+  line-height: 30px;
+  width: @multi-width;
+  font-size: 14px;
+  border-radius: @multi-border-radius;
+  &-selection {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    border-radius: @multi-border-radius;
+    border: 1px solid @multi-border-color;
+    transition: all 0.3s @ease-in-out;
+    &:hover {
+      border-color: @multi-border-color-hover;
+    }
+    &--multiple--content {
+      position: relative;
+      display: block;
+      height: @multi-height;
+      margin-left: @multi-margin;
+      margin-right: @multi-margin + @multi-margin;
+      user-select: none;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    &--item {
+      margin-right: 2px;
+      &:last-child {
+        .nwd-multi-select-selection--item_break {
+          display: none;
+        }
+      }
+    }
+    &--placeholder {
+      color: @multi-placeholder-color;
+    }
+  }
+  &-arrow {
+    font-size: 12px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    color: rgba(0, 0, 0, 0.25);
+    right: @multi-margin;
+    margin-top: -6px;
+    line-height: 1;
+    transition: all 0.3s @ease-in-out;
+  }
+  &-open {
+    outline: 0;
+    box-shadow: 0 0 0 2px rgba(47, 56, 71, 0.2);
+    .@{ant-prefix}-multi-select-arrow {
+      transform: rotate(180deg);
+    }
+ 
+    .@{ant-prefix}-multi-select-selection {
+      border: 1px solid @multi-border-color-hover;
+    }
+  }
+  &-warp {
+    // min-width: 367px;
+    height: 367px;
+    max-width: 760px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    &--col{
+      white-space: nowrap;
+      color: #666;
+    }
+    &--col:nth-child(3n+1) {
+      padding-left: 24px !important; 
+    }
+    &--footer {
+      text-align: center;
+      >button {
+        margin: 12px 24px 0  0;
+      }
+    }
+  }
+  .@{ant-prefix}-row {
+    // max-height: 
+  }
+}

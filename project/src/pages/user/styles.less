@@ -1,0 +1,201 @@
+.register{
+  background: #F3F5F8;
+  width: 100%;
+  &-title{
+    background: white;
+    width: 100%;
+    height: 58px;
+    line-height: 58px;
+    padding-left: 24px;
+    font-size: 18px;
+    color: #333;
+    position: fixed;
+    top: 64px;
+    left: 0;
+    z-index: 2;
+  }
+  &-content{
+    height: calc(100vh - 122px);
+    width: 100%;
+    padding: 24px 50px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  &-row{
+    margin-top: 88px;
+    .line{
+      padding-bottom: 14px;
+      background: white;
+      border-top: 1px solid #e8e8e8
+    }
+  }
+  &-form{
+    background-color: white;
+    width: 100%;
+    max-width: 1490px;
+    padding-bottom: 80px;
+    margin: 0 auto;
+    .register-title{
+      font-size: 16px;
+    }
+    .nwd-form-item{
+      width: 745px;
+      margin: 0 auto 24px;
+      .nwd-form-item-label{
+        width: 140px;
+      }
+      .nwd-form-item-control-wrapper{
+        width: 600px;
+      }
+    }
+    .nwd-btn-primary{
+      background: #0099e8;    
+      border-color: #0099e8;
+      height: 48px;
+      width: 384px;
+      font-size: 16px;
+    }
+  }
+}
+.login{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .login-content{
+    width: 1000px;
+    height: 518px;
+    background-image: url('../../assets/loginBg.png');
+    background-repeat: no-repeat; 
+    background-color: #ffffff;
+    padding-left: 558px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    z-index: 100;
+    .login-form{
+      width: 384px;
+      margin-left: 38px;
+      color: #999999;
+      .nwd-col-offset-6{
+        margin-left: 0;
+      }
+      &_title{
+        position: relative;
+        font-size: 38px;
+        width: 100%;
+        text-align: center;
+        padding: 50px 0;
+        color: #333;
+      }
+      .nwd-input{
+        height: 48px;
+      }
+      .nwd-form-item{
+        margin-bottom: 40px;
+      }
+      .nwd-btn-primary{
+        background: #0099e8;    
+        border-color: #0099e8;
+        height: 48px;
+        width: 100%;
+        font-size: 16px;
+        margin: 12px 0;
+      }
+      .nwd-form-explain{
+        position: absolute;
+      }
+    }
+  }
+  &-error {
+    bottom: 6px;
+    position: absolute;
+    color: #f5222d;
+    font-size: 16px;
+  }
+}
+
+.forget{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 64px);
+  overflow-y: auto;
+  .forget-form{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  &-box{
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+    width: 870px; 
+    background-color: white;
+    box-shadow: 0 3px 20px 0 rgba(0,0,0,0.15);
+    &__title{
+      padding: 0 24px;
+      height: 70px;
+      display: flex;
+      justify-content: space-between; 
+      align-items: center;
+      border-bottom: 1px solid #eee;
+      .nwd-steps-item-finish .nwd-steps-item-icon > .nwd-steps-icon {
+        color: #0099e8;
+      }
+      .nwd-steps-item-finish > .nwd-steps-item-content > .nwd-steps-item-title {
+        color: #0099e8;
+      }
+      .nwd-steps-item-finish > .nwd-steps-item-content > .nwd-steps-item-title::after {
+        background-color: #0099e8;
+      }
+      .nwd-steps-item-finish .nwd-steps-item-icon {
+        border-color: #0099e8;
+      }
+      .nwd-steps-item-process .nwd-steps-item-icon {
+        background-color: #0099e8;
+        border-color: #0099e8;
+      }
+      .nwd-steps-item-process > .nwd-steps-item-content > .nwd-steps-item-title {
+        color: #0099e8;
+      }
+    }
+    &__content{
+      width: 100%;
+      display: flex;
+      justify-content: space-between; 
+      align-items: center;
+      flex: 1;
+    }
+  }
+  &-btn{
+    border:none;
+    height: 48px;
+    width: 100%;
+    background: #0099e8;
+    color: white;
+    font-size: 16px;
+    &:hover{
+      background-color: #2eabec !important;
+      color: white;
+    }
+    &:active {
+      background-color: #008cd3 !important;
+      color: white;
+    }
+    &:focus {
+      background-color: #008cd3 !important;
+      color: white;
+    }
+  }
+}
+.resetpassword{
+  background: white;
+  min-height: calc(100% - 0px);
+  padding: 20px 0;
+}

@@ -1,0 +1,55 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "cross-env UMI_ENV=test MOCK=none PORT=4500 umi dev",
+    "build": "cross-env UMI_ENV=test umi build",
+    "prod": "cross-env UMI_ENV=prod umi build",
+    "test": "umi test"
+  },
+  "dependencies": {
+    "antd": "^3.20.7",
+    "axios": "^0.19.0",
+    "bizcharts": "^3.5.5",
+    "blueimp-md5": "^2.11.1",
+    "classnames": "^2.2.6",
+    "dva": "^2.4.1",
+    "immutability-helper": "^3.0.1",
+    "is_js": "^0.9.0",
+    "loadsh": "0.0.4",
+    "md5": "^2.2.1",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.26",
+    "numeral": "^2.0.6",
+    "path-to-regexp": "^3.0.0",
+    "qs": "^6.7.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-fast-compare": "^2.0.4",
+    "redux-persist": "^5.10.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^9.0.0",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.4.0",
+    "eslint-config-umi": "^1.4.0",
+    "eslint-plugin-flowtype": "^2.50.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.2",
+    "react-infinite-scroller": "^1.2.4",
+    "react-test-renderer": "^16.7.0",
+    "umi": "^2.8.8",
+    "umi-plugin-react": "^1.8.4"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}

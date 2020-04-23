@@ -1,0 +1,81 @@
+// /affiliates 路由
+.affiliate {
+  .circle {
+    position: relative;
+    padding: 0 0 0 15px;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background: #0c0;
+      border-radius: 100px;
+      top: 50%;
+      transform:translateY(-50%);
+      left: 0;
+    }
+  }
+  .red-circle {
+    position: relative;
+    padding: 0 0 0 15px;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 100px;
+      top: 50%;
+      transform:translateY(-50%);
+      left: 0;
+      background: #EF6F6F;
+    }
+  }
+  .nwd-table-fixed {
+    td:nth-child(2) {
+      min-width: 150px;
+    }
+    td:nth-child(7) {
+      min-width: 125px;
+    }
+    td:nth-child(8) {
+      min-width: 155px;
+    }
+    td:nth-child(10) {
+      min-width: 150px;
+    }
+    td:nth-child(12) {
+      min-width: 150px;
+    }
+    td:nth-child(14) {
+      min-width: 150px;
+    }
+  }
+}
+
+// /affiliates/add 路由
+.add-affiliate, .edit-affiliate {
+  .public {
+    padding: 18px 24px;
+    background: #FFF;
+    h4 {
+      font-size: 16px;
+    }
+    .content {
+      padding: 29px 0px;
+    }
+  }
+  .offer-settings {
+    .content {
+      padding: 0;
+      .offer-table {
+        padding: 18px 24px;
+        border-top: 2px #DDDDDD solid;
+      }
+    }
+  }
+  .infinite-scroll {
+    max-height: 660px;
+    overflow: auto;
+  }
+}
+

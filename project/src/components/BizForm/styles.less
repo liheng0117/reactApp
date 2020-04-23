@@ -1,0 +1,42 @@
+
+.filtro {
+  margin-top: -12px;
+  &-item {
+    margin-bottom: 12px !important;
+  }
+  &-action {
+    text-align: right;
+    >button {
+      &:first-child {
+        margin-right: 24px;
+      }
+    }
+  }
+}
+.verification-img {
+  height: 32px;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid rgb(217, 217, 217);
+  >img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.sheet-group-suffix {
+  display: flex !important;
+  height: 32px;
+  align-items: center;
+}
+.sheet-upload {
+  display: flex;
+  &__file {
+    cursor: pointer;
+    flex: 1;
+    line-height: 32px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+  }
+}
