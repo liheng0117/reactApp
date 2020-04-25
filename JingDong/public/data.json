@@ -1,0 +1,232 @@
+{
+  "code": 200,
+  "data": {
+    "logo": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1559791784666.png",
+    "bannerList": [
+      {
+        "id": "22",
+        "image": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/2/155982167443.png",
+        "url": "/pages/tabBar/home",
+        "type": "switchTab",
+        "parameter": ""
+      },
+      {
+        "id": "23",
+        "image": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/2/1559821706971.png",
+        "url": "/pages/goods/goods?cid=1",
+        "type": "navigate",
+        "parameter": "1"
+      },
+      {
+        "id": "21",
+        "image": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/2/1559821648777.png",
+        "url": "/pages/goods/goodsDetailed?productId=19",
+        "type": "navigate",
+        "parameter": "19"
+      },
+      {
+        "id": "24",
+        "image": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/2/1559821733602.png",
+        "url": "/pages/tabBar/home",
+        "type": "switchTab",
+        "parameter": ""
+      }
+    ],
+    "pluginList": [
+      {
+        "name": "拼团",
+        "image": "https://xiaochengxu.laiketui.com/static/img/h_group.png",
+        "status": false
+      },
+      {
+        "name": "签到",
+        "image": "https://xiaochengxu.laiketui.com/static/img/h_sign.png",
+        "status": false
+      },
+      {
+        "name": "优惠券",
+        "image": "https://xiaochengxu.laiketui.com/static/img/h_coupon.png",
+        "status": false
+      },
+      {
+        "name": "砍价",
+        "image": "https://xiaochengxu.laiketui.com/static/img/h_bargain.png",
+        "status": false
+      },
+      {
+        "name": "竞拍",
+        "image": "https://xiaochengxu.laiketui.com/static/img/h_bidding.png",
+        "status": false
+      }
+    ],
+    "recommandList": [
+      {
+        "id": "8",
+        "product_title": "GUESS 女士毛边连帽拉链羽绒服",
+        "imgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/15523606063.png",
+        "volume": "98",
+        "price": "680.00",
+        "yprice": "1500.00"
+      },
+      {
+        "id": "17",
+        "product_title": "NewBalanceNB 女款羽绒服运动休闲外套",
+        "imgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1552363250668.png",
+        "volume": "32",
+        "price": "540.00",
+        "yprice": "897.00"
+      },
+      {
+        "id": "72",
+        "product_title": "BALENCIAGA SHIRT DENIM 男生帅气牛仔外套",
+        "imgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1554366432189.png",
+        "volume": "53",
+        "price": "258.00",
+        "yprice": "450.00"
+      },
+      {
+        "id": "75",
+        "product_title": "CATSON STORE麻花编织手绳",
+        "imgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1554367190291.png",
+        "volume": "145",
+        "price": "32.00",
+        "yprice": "58.00"
+      },
+      {
+        "id": "78",
+        "product_title": "Into The Rainbow经典条纹衬衫",
+        "imgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1554369228537.png",
+        "volume": "256",
+        "price": "145.00",
+        "yprice": "345.00"
+      },
+      {
+        "id": "203",
+        "product_title": "牛肉粉",
+        "imgurl": "https://xiaochengxu.laiketui.com/V2.6/images/image_1/1559126774277.jpeg",
+        "volume": "4",
+        "price": "15.00",
+        "yprice": "5.00"
+      },
+      {
+        "id": "227",
+        "product_title": "测试",
+        "imgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1560995994852.jpeg",
+        "volume": "19",
+        "price": "299.00",
+        "yprice": "500.00"
+      }
+    ],
+    "goodsList": [
+      {
+        "id": "152",
+        "product_title": "彩妆套装 单品 口红 粉底",
+        "subtitle": "",
+        "imgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1556608760654.png",
+        "volume": "127",
+        "price": "100.00",
+        "yprice": "400.00"
+      },
+      {
+        "id": "78",
+        "product_title": "Into The Rainbow经典条纹衬衫",
+        "subtitle": "Into The Rainbow经典条纹衬衫",
+        "imgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1554369228537.png",
+        "volume": "256",
+        "price": "145.00",
+        "yprice": "345.00"
+      },
+      {
+        "id": "75",
+        "product_title": "CATSON STORE麻花编织手绳",
+        "subtitle": "CATSON STORE麻花编织手绳",
+        "imgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1554367190291.png",
+        "volume": "145",
+        "price": "32.00",
+        "yprice": "58.00"
+      },
+      {
+        "id": "72",
+        "product_title": "BALENCIAGA SHIRT DENIM 男生帅气牛仔外套",
+        "subtitle": "BALENCIAGA SHIRT DENIM TAG LIKE A MAN HANDWRITTEN",
+        "imgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1554366432189.png",
+        "volume": "53",
+        "price": "258.00",
+        "yprice": "450.00"
+      },
+      {
+        "id": "28",
+        "product_title": "Haier/海尔三门小型家用节能冰箱",
+        "subtitle": "Haier/海尔 BCD-206TPA 206升三门小型家用节能冰箱",
+        "imgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1552471371635.jpeg",
+        "volume": "29",
+        "price": "1245.00",
+        "yprice": "1799.00"
+      },
+      {
+        "id": "18",
+        "product_title": "朱雀床 鸣奏天空之境",
+        "subtitle": "",
+        "imgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1552374780386.png",
+        "volume": "17",
+        "price": "2800.00",
+        "yprice": "4588.00"
+      },
+      {
+        "id": "17",
+        "product_title": "NewBalanceNB 女款羽绒服运动休闲外套",
+        "subtitle": "",
+        "imgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1552363250668.png",
+        "volume": "32",
+        "price": "540.00",
+        "yprice": "897.00"
+      },
+      {
+        "id": "8",
+        "product_title": "GUESS 女士毛边连帽拉链羽绒服",
+        "subtitle": "GUESS 女士毛边连帽拉链羽绒服",
+        "imgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/15523606063.png",
+        "volume": "98",
+        "price": "680.00",
+        "yprice": "1500.00"
+      },
+      {
+        "id": "6",
+        "product_title": "【12期免息】马歇尔蓝牙音箱音响iphone手机",
+        "subtitle": "【12期免息】马歇尔marshall kilburn蓝牙音箱音响iphone苹果手机",
+        "imgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1552360225665.png",
+        "volume": "111",
+        "price": "868.00",
+        "yprice": "2000.00"
+      },
+      {
+        "id": "227",
+        "product_title": "测试",
+        "subtitle": "",
+        "imgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/0/1560995994852.jpeg",
+        "volume": "19",
+        "price": "299.00",
+        "yprice": "500.00"
+      },
+      {
+        "id": "204",
+        "product_title": "微信",
+        "subtitle": "",
+        "imgurl": "https://xiaochengxu.laiketui.com/V2.6/images/image_1/1559128113327.jpeg",
+        "volume": "3",
+        "price": "28.00",
+        "yprice": "20.00"
+      },
+      {
+        "id": "150",
+        "product_title": "vvxHelloPRO",
+        "subtitle": "vvxHelloPRO",
+        "imgurl": "https://laikeds.oss-cn-shenzhen.aliyuncs.com/1/2/1556605507836.jpeg",
+        "volume": "48",
+        "price": "0.01",
+        "yprice": "1.00"
+      }
+    ]
+  },
+  "message": "操作成功"
+}
