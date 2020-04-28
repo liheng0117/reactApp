@@ -1,0 +1,11 @@
+{
+    "code":"ok",
+    "status":200,
+    "data":[
+        {"id":0,"name":"鱼香肉丝","price":12,"num":1},
+        {"id":1,"name":"宫保鸡丁","price":23,"num":1},
+        {"id":2,"name":"干炸里脊","price":16,"num":1},
+        {"id":3,"name":"大米饭","price":32,"num":1},
+        {"id":4,"name":"土豆丝","price":8,"num":1}
+    ]
+}
